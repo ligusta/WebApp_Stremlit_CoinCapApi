@@ -35,12 +35,12 @@ response = requests.request("GET", url, headers=headers, data=payload)
 
 json_data = json.loads(response.text.encode('utf8'))
 
-bitcoin_data = json_data["data"]
+crypto_data = json_data["data"]
 
 # Writing data received from the Coinsup API to a CSV file
 # Adding an additional column 'date' for the date in the "human format"
 
-df = pd.DataFrame(bitcoin_data, columns=['time', 'priceUsd','date'])
+df = pd.DataFrame(crypto_data, columns=['time', 'priceUsd','date'])
 df['time'] = (df['time']/1000).astype(int)
 df['date'] = df['date'].astype(str)
 
