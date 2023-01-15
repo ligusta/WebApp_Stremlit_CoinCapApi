@@ -2,7 +2,7 @@ requests
 json
 streamlit
 pandas
-matplotlib.pyplot
+matplotlib
 datetime
 time
 calendar
