@@ -1,0 +1,8 @@
+requests
+json
+streamlit
+pandas
+matplotlib.pyplot
+datetime
+time
+calendar
